@@ -1,0 +1,17 @@
+.list-items {
+    display: flex;
+    border-bottom: 2px dashed #000;
+}
+
+.list-item {
+    font-family: cursive;
+    font-weight: bold;
+    padding: 0.5rem;
+    list-style-type: none;
+    color: #3D3C42;
+    cursor: default; 
+}
+
+.item-checkbox:checked + .list-item , .list-item:hover {
+    text-decoration: line-through;
+}
