@@ -1,0 +1,11 @@
+.todo-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} 
+
+.todo-list__item {
+    width: 20rem;
+    height: 30rem;
+    background-color: #FCF8E8;
+}
