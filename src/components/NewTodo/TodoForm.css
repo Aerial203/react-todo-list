@@ -1,0 +1,29 @@
+.new-todo__controls {
+    width: 20rem;
+    background-color: #FCF8E8;
+    padding: 1.5rem;
+    height: 2.6rem;
+    border-bottom: 2px dashed #3D3C42;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1rem;
+    
+}
+
+.new-todo__control {
+    width: 15rem;
+    height: 3rem;
+}
+
+.new-todo__control input {
+    border: none;
+    border-bottom: 1px solid #3D3C42;
+    height: 2.5rem;
+    width: 15rem;
+    text-align: center;
+    font-family: cursive;
+    background-color: #FCF8E8;
+    outline: none;
+}

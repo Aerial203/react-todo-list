@@ -1,6 +1,6 @@
 .todo-list {
     display: flex;
-    align-items: center;
+    align-items: column;
     justify-content: center;
 } 
 
@@ -8,6 +8,5 @@
     width: 20rem;
     height: 30rem;
     background-color: #FCF8E8;
-    padding: 1rem;
-    margin: 0.5rem auto;
+    padding: 1.5rem;
 }
