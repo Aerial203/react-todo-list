@@ -6,10 +6,9 @@ const Todo = (props) => {
   return (
     <Card className="todo-list">
       <div className="todo-list__item">
-        <ItemList item={props.list[0].item} />
-        <ItemList item={props.list[1].item} />
-        <ItemList item={props.list[2].item} />
-        <ItemList item={props.list[3].item} />
+        {props.listItems.map((listItem) => {
+          return <ItemList key={listItem.id} item={listItem.item} />
+        })}
       </div>
     </Card>
   )
