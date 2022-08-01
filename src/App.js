@@ -2,7 +2,7 @@ import React, { useState } from "react"
 import Todo from "./components/TODO_LIST/Todo"
 import NewTodo from "./components/NewTodo/NewTodo"
 
-const todoList = []
+let todoList = []
 
 const App = () => {
   const [list, setList] = useState(todoList)
@@ -11,11 +11,15 @@ const App = () => {
       return [dataItem, ...prevList]
     })
   }
+  const get_item_id = (itemId) => {
+    const newList = list.filter((item) => item.id !== itemId)
+    setList((prevList) => [...newList])
+  }
 
   return (
     <div>
       <NewTodo onAddList={add_item_handler} />
-      <Todo listItems={list} />
+      <Todo listItems={list} onGetItemId={get_item_id} />
     </div>
   )
 }
