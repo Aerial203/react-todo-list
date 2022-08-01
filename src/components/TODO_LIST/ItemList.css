@@ -15,3 +15,7 @@
 .item-checkbox:checked + .list-item , .list-item:hover {
     text-decoration: line-through;
 }
+
+.list-label {
+    display: flex;
+}

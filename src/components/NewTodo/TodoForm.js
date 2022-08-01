@@ -10,6 +10,7 @@ const TodoForm = (props) => {
 
   const handle_submit = (e) => {
     e.preventDefault()
+    if (!inputValue) return
     const data = {
       id: new Date().getTime().toString(),
       item: inputValue,
